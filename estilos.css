@@ -1,0 +1,383 @@
+/* hoja de estilos-index html 3 a */
+
+
+/* variables */
+
+
+:root{
+	--negro: #29272a;
+	--negroclaro: grey;
+	--naranja:#f69c21;
+	--gris: #f0f0f0;
+	--blanco:#ffffff;
+	--negroverdadero: #000;
+	--amarillo: yellow;
+	
+	
+	
+}
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-color: var(--negro);
+	background-image: url("images/pattern.jpg");
+	font-family: Arial;
+	
+	
+}
+
+h2{
+	font-size:20px;
+	margin-bottom:16px;
+	
+	
+	
+}
+
+h3 {
+	font-size:17px;
+	padding-left:37px;
+	
+}
+
+h4{
+	font-weight:normal;
+	
+}
+
+
+
+
+
+.cabecera {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	margin-bottom: 24px;
+	
+}
+
+h1{
+	color:  var(--naranja);
+	
+}
+
+.contenedor{
+	
+	background-color: var(--blanco);
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:10px 10px 0 0;
+	
+	
+	
+}
+
+
+		/* SECCION BOTONERA */
+
+
+.botonera{
+	background-color: var(--naranja);
+	padding-top:8px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	max-height: 58px;
+	max-width: 1000px;
+
+	border-radius:10px 10px 0 0;
+	
+}
+
+.botonera-lista{
+	list-style-type: none;
+	display: flex;
+
+	
+}
+
+
+
+.botonera li{
+	flex-grow: 1;
+
+	
+		
+		
+}
+
+
+.botonera a{
+	
+	text-decoration: none;
+
+	display: block;
+	border-right: 1px solid var(--amarillo);
+	text-align: center;
+	padding: 6px 0;
+	color: var(--blanco);
+	
+
+	
+}
+
+.botonera a:hover{
+	
+	
+}
+
+a.sin-borde{
+	
+	border-right: none;
+	
+}
+
+
+.botonera-lista_formulario{
+	
+	flex-grow:1;
+	display:flex;
+	justify-content:center;
+	padding-left:70px;
+
+	
+	
+}
+
+.botonera-lista_formulario input{
+	
+	padding:2px 4px;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+				/* Seccion slider */
+				
+				
+.slider{
+	text-align:center;
+	margin-top:30px;
+}
+
+					/* seccion categorias */
+
+.categorias{
+	margin-top:50px;
+	width:20%;
+	float:left;
+		margin-bottom:34px;
+	
+}
+
+.botonera-categorias{
+		list-style-type: none;
+		
+}
+
+.botonera-categorias a{
+		display:block;
+		padding: 6px 0;
+
+		text-decoration: none;
+	
+		
+	
+}
+
+.botonera-categorias a:hover{
+	font-weight: bold;
+}
+
+.categorias h2{
+	
+	padding-left:25px;
+	
+	
+}
+
+.botonera-categorias li{
+		
+		border-bottom: 1px dashed black;
+		
+		margin-left:35px;
+	
+	
+}
+
+						/* seccion productos */
+
+.productos{
+	margin-top:50px;
+	margin-bottom:34px;
+
+	width:80%;
+	float:right;
+	
+	padding-right:56px;
+	
+	
+
+	
+}
+.lampara{
+	
+	width:50%;
+	float:left;
+	margin-bottom: 40px;
+	padding-left:35px;
+	
+}
+
+.lampara img{
+	
+	float:left;
+	/* width:50%; no es necesario ponerlo aca tambien si ya lo puse en .lampara p */
+}
+
+.lampara p{
+	float:right;	
+	width:50%;
+	padding-left:30px;
+
+}
+
+
+.newsletter{
+	border-radius: 5px;
+	
+	clear:both;
+	max-width:940px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
+
+	border: 1px solid var(--negroclaro);
+	padding:10px 24px;
+	
+	
+	background-image: linear-gradient(var(--blanco), var(--negroclaro));
+	
+	display: flex;
+	
+	/* justify-content: space-between; */
+	align-items:center;
+	
+	
+}
+
+.newsletter p{
+
+		padding-left:80px;
+
+	
+	
+}
+
+.newsletter form{
+	flex-grow:1;
+	display:flex;
+	justify-content:flex-end;
+	
+}
+
+.newsletter form [type="submit"]{
+	background:none;
+	border:none;
+	
+	cursor:pointer;
+	
+	font-weight: bold;
+	padding:5px 8px;
+}
+
+.pie{
+	background-color: var(--gris);
+	padding: 6px 50px;
+	border-top: 1px solid var(--negro);
+	margin-top:30px;
+	
+	
+	font-size:14px;
+	color:var(--negro);
+}
+
+
+.pie-copy, .pie-china, .pie-argentina{
+	
+	float:left;
+	padding-right: 15px;
+	
+	
+	
+}
+
+.pie-argentina{
+	border-left: 1px solid var(--negro);
+	padding-left: 15px;
+	
+}
+
+
+
+.pie-creditos{
+	clear: both;
+	text-align:right;
+	color: var(--negroclaro);
+	font-size:12px;
+	
+	
+}
+
+.pie-creditos a{
+	
+	/* aca aplicamos la fuentes de google */
+		font-family: 'Indie Flower', cursive;
+		
+		
+	
+}
+
+
+
+					/*-*-*-**-*-*-**-*-*-**-*-*-**-*-*-**-*-*-*
+								PAPINA EMPRESAA
+					*-*-*-**-*-*-**-*-*-**-*-*-**-*-*-**-*-*-*/
+					
+					
+.pagina-empresa .productos {
+	
+	background-color: green;
+	
+padding-left: 20px;
+	
+}
+
+.pagina-empresa .categorias{
+	margin-bottom:40px;
+	
+}
